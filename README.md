@@ -9,7 +9,9 @@
 <br>
 
 # フローチャート
-<img width="1654" height="3840" alt="Untitled diagram _ Mermaid Chart-2025-09-06-214743" src="https://github.com/user-attachments/assets/213564ba-3570-492f-9171-88773d694514" />
+<img width="1654" height="3840" alt="486464041-213564ba-3570-492f-9171-88773d694514" src="https://github.com/user-attachments/assets/5db46697-4632-4336-94a4-c70b42ec18b0" />
+
+
 
 プレイヤーが点をクリックしたか、そしてクリックした点は変数**next_dot**の値と同じ番号かをチェックしている。<br>
 繋がっていない点が無くなるまでプログラムを動き続けます。<br>
@@ -41,7 +43,8 @@ python -m pip install -U pip
 **1. 準備**<br>
 IDLEを起動しFileメニューからNew Fileを選んで<br>
 新しいファイルを作成する。<br>
-![スクリーンショット 2025-09-07 072729](https://github.com/user-attachments/assets/f0b76d79-24f1-4346-9100-3b596b02c49b)
+<img width="204" height="308" alt="スクリーンショット 2025-09-07 072707" src="https://github.com/user-attachments/assets/a817ac8b-b29d-442b-a2c4-761a8657a1a6" />
+
 
 **2. セーブする**<br>
 フォルダーを新しく作成し、**Fileメニュー**内の**Save As**を選び**numbers.py**という名前で保存。
