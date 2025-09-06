@@ -9,7 +9,8 @@
 <br>
 
 # フローチャート
-<img width="1654" height="3840" alt="486464041-213564ba-3570-492f-9171-88773d694514" src="https://github.com/user-attachments/assets/5db46697-4632-4336-94a4-c70b42ec18b0" />
+<img width="1652" height="3840" alt="Untitled diagram _ Mermaid Chart-2025-09-06-233258" src="https://github.com/user-attachments/assets/01086913-a493-422d-b27c-a23c41028040" />
+
 
 
 
