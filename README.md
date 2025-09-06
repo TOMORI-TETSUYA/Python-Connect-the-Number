@@ -44,8 +44,22 @@ python -m pip install -U pip
 IDLEを起動しFileメニューからNew Fileを選んで<br>
 新しいファイルを作成する。<br>
 <img width="204" height="308" alt="スクリーンショット 2025-09-07 072707" src="https://github.com/user-attachments/assets/a817ac8b-b29d-442b-a2c4-761a8657a1a6" />
-
-
+<br>
 **2. セーブする**<br>
-フォルダーを新しく作成し、**Fileメニュー**内の**Save As**を選び**numbers.py**という名前で保存。
-
+フォルダーを新しく作成し、**Fileメニュー**内の**Save As**を選び**numbers.py**という名前で保存。<br>
+<br>
+**3. 画像用フォルダー**<br>
+新しくimagesというフォルダを作成しConnect the Numberのフォルダの中に保存<br>
+<br>
+**4. 画像をセットする**<br>
+Connect the Number用画像を保存する。<br>
+<br>
+**5. モジュールを組み入れる**<br>
+プログラミングの準備が終わったら、IDLEファイルに戻り<br>
+以下のソースコードを1行目に入力する。<br>
+```
+from random import randint
+```
+> [!TIP]
+> **random**(ランダム)モジュールから``randint()``関数を
+> 組み入れる。
