@@ -23,13 +23,13 @@ Pygame Zeroのインストール(Windows環境)<br>
 ```
 python -m pip install -U pip
 ```
-4. pygameのインストール<br>
+3. pygameのインストール<br>
    パッケージマネージャーをインストールしたら下記の<br>
    命令文を入力しENTERキーを押すこれでPygameがインストールされます。<br>
    ```
    pip install pygame
    ```
-5. Pygame Zeroのインストール<br>
+4. Pygame Zeroのインストール<br>
    最後に下記の命令文を入力しENTERキーを押す。<br>
    これでPygame Zeroがインストールされる。<br>
    ```
