@@ -33,3 +33,7 @@ def draw():
         dot.draw()
 
         number = number + 1
+
+    for line in lines:
+
+        screen.draw.line(line[0], line[1], (100, 0, 0))
