@@ -120,7 +120,7 @@ for dot in range(0, 10):
 
     actor = Actor("dot")
 
-    actor = .pos = randint(20, WIDTH - 20), \
+    actor.pos = randint(20, WIDTH - 20), \
 
     randint(20, HEIGHT - 20)
 
@@ -144,10 +144,64 @@ for dot in range(0, 10):
 > 新しいアクターを作成。
 
 ```
-   actor = .pos = randint(20, WIDTH - 20), \
+   actor.pos = randint(20, WIDTH - 20), \
 ```
 
 > [!NOTE]
 > 点の画像全体が画面に表示されるよう、画面から
 > 少なくとも20ピクセル離れた位置に点を置くように設定。
+
+**8. アクターを描く**<br>
+``draw()``関数を使って点を番号と一緒に画面に表示する。<br>
+``screen.draw.text()``関数は文字列を引数として受け取るようにいるが、<br>
+変数**number**に入っているのは整数のため。<br>
+そのため``str()``関数を使って整数を文字列を文字列に変えなければならない。<br>
+
+**ソースコード**
+```
+def draw():
+
+    screen.fill("black")
+
+    number = 1
+
+    for dot in dots:
+
+        screen.draw.text(str(number), \
+
+                            (dot.pos[0], dot.pos[1] + 12))
+
+        dot.draw()
+
+        number = number + 1
+```
+
+**解説**
+
+```
+    screen.fill("black")
+```
+
+> [!NOTE]
+> 背景色を黒に設定
+
+```
+    number = 1
+```
+
+> [!NOTE]
+> 直前にクリックした点の番号を
+> 入れておくための変数を作成。
+
+```
+    for dot in dots:
+
+        screen.draw.text(str(number), \
+
+                            (dot.pos[0], dot.pos[1] + 12))
+```
+
+> [!NOTE]
+> この部分で、点を番号と一緒に
+> 画面に描いている
 
