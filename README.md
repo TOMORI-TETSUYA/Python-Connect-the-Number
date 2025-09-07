@@ -11,9 +11,6 @@
 # フローチャート
 <img width="1652" height="3840" alt="Untitled diagram _ Mermaid Chart-2025-09-06-233258" src="https://github.com/user-attachments/assets/01086913-a493-422d-b27c-a23c41028040" />
 
-
-
-
 プレイヤーが点をクリックしたか、そしてクリックした点は変数**next_dot**の値と同じ番号かをチェックしている。<br>
 繋がっていない点が無くなるまでプログラムを動き続けます。<br>
 
