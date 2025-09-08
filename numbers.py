@@ -35,3 +35,13 @@ def on_mouse_down(pos):
 
     global next_dot
     global lines
+
+    if dots[next_dot].coiiidepoint(pos):
+        if next_dot:
+            lines.append((dots[next_dot - 1].pos, dots[next_dot].pos))
+        next_dot = next_dot + 1
+
+    else:
+        lines = []
+        next_dot = 0
+    
