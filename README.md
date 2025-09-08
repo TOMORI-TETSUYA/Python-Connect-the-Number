@@ -233,4 +233,27 @@ pgzru ディレクトリ\numbers.py
 ![タイトルなし](https://github.com/user-attachments/assets/d6c99966-f81d-4c29-9ec3-f4b952dd7577)
 
 
+**13. 新しい関数を加える**<br>
+今の状態で、プログラムを動かして点をクリックしても<br>
+何も起きない為、on_mouse_down(pos)関数をソースコードに加える。<br>
+
+**ソースコード**<br>
+
+```
+def on_mouse_down(pos):
+
+    global next_dot
+    global lines
+```
+
+**解説**
+
+```
+    global next_dot
+    global lines
+```
+
+> [!NOTE]
+> グローバル変数の``next_dot``と``lines``の値を変えるには
+> この2行を入れておかなければならない。
 
