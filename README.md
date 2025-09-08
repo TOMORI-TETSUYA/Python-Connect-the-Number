@@ -319,6 +319,20 @@ def on_mouse_down(pos):
 > アクターの位置と同じかどうかをチェックするのに使用。<br>
 
 **例**
+
+**ソースコード**
+```
+dot = Actor("dot")
+
+def on_mouse_down(pos):
+
+    if dot.collidepoint(pos):
+
+        print("Ouch")
+```
+
+**解説**
+
 ```
 dot = Actor("dot")
 ```
@@ -339,5 +353,6 @@ def on_mouse_down(pos):
 > マウスがクリックされた位置と点の位置が<br>
 > 同じだったらシェルウィンドウに「Ouch」と表示される。<br>
 
-
+**15. 完成**<br>
+コマンドラインから実行しゲームがプレイできます。
 
