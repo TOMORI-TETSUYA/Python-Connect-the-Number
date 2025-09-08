@@ -257,3 +257,64 @@ def on_mouse_down(pos):
 > グローバル変数の``next_dot``と``lines``の値を変えるには
 > この2行を入れておかなければならない。
 
+**14. 線を繋ぐ**<br>
+クリックされたときの処理。<br>
+``def on_mouse_down(pos)``の下の行に追加。<br>
+
+**ソースコード**
+```
+    if dots[next_dot].coiiidepoint(pos):
+        if next_dot:
+            lines.append((dots[next_dot - 1].pos, dots[next_dot].pos))
+        next_dot = next_dot + 1
+
+    else:
+        lines = []
+        next_dot = 0
+```
+
+**解説**
+
+```
+   if dots[next_dot].coiiidepoint(pos):
+```
+> [!NOTE]
+> プレイヤーが次の点を順番どおりにクリックしかチェック。
+
+```
+        if next_dot:
+```
+> [!NOTE]
+> プレイヤーが最初の点をすでにチェックしたかのチェック。
+
+```
+            lines.append((dots[next_dot - 1].pos, dots[next_dot].pos))
+```
+
+> [!NOTE]
+> 今クリックした点と、直前にクリックした点を
+> 線で繋ぐ。
+
+```
+        next_dot = next_dot + 1
+```
+
+> [!NOTE]
+> 次の点の番号を``next_dot``に代入。
+
+```
+    else:
+        lines = []
+        next_dot = 0
+```
+
+> [!NOTE]
+> プレイヤーが間違えた点をクリックした時は
+> ``next_dot``の値を最初の状態に戻し、
+> 描かれている線を全て消してしまう。
+
+**collidepoint()**
+> [!IMPORTANT]
+> ``collidepoint()``関数は、マウスでクリックした位置が
+> アクターの位置と同じかどうかをチェックするのに使用。
+
