@@ -227,7 +227,7 @@ draw()関数を完成させる。
 コマンドプロント/PowerShellのコマンドラインを使用して実行。<br>
 
 ```
-pgzru ディレクトリ\numbers.py
+pgzrun ディレクトリ\numbers.py
 ```
 
 **12. 表示の確認**<br>
